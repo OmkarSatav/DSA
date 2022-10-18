@@ -1,4 +1,4 @@
-public class MaxMinElementInArray {
+public class Maximum_and_Minimum_Element_in_an_Array {
 
     public static void findMaxAndMinEle(int[] arr) {
         int maxEle = Integer.MAX_VALUE;

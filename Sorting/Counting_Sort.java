@@ -1,4 +1,4 @@
-public class SortingPractice {
+public class Counting_Sort {
 
     public static void countingSort(int arr[]) {
         int maxNum = Integer.MIN_VALUE;

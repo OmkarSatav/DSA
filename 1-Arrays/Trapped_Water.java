@@ -1,4 +1,4 @@
-public class TrappedWater {
+public class Trapped_Water {
     public static void trappedWaterCount(int height[]) {
         int len = height.length;
 

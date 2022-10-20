@@ -1,4 +1,4 @@
-public class StockPurchaseSellVal {
+public class Stock_Purchase_Sell_Val {
     public static void purchaseSellDayProfit(int stockPriceOnDay[]) {
         int n = stockPriceOnDay.length;
 

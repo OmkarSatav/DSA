@@ -1,4 +1,5 @@
 public class Stock_Purchase_Sell_Val {
+    // returns maximum profit with purchase and sell day
     public static void purchaseSellDayProfit(int stockPriceOnDay[]) {
         int n = stockPriceOnDay.length;
 
@@ -28,6 +29,21 @@ public class Stock_Purchase_Sell_Val {
 
     }
 
+    // Function returns maximum profit
+    public static int maxProfit(int arr[]) {
+        int buyDay = arr[0];
+        int profit = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (buyDay < arr[i]) {
+                profit = Math.max(arr[i] - buyDay, profit);
+            } else {
+                buyDay = arr[i];
+            }
+        }
+        return profit;
+    }
+    
+    
     public static void main(String[] args) {
         int stockPriceOnDay[] = { 7, 1, 5, 3, 6, 4 };
         purchaseSellDayProfit(stockPriceOnDay);

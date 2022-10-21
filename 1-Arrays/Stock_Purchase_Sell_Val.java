@@ -18,7 +18,7 @@ public class Stock_Purchase_Sell_Val {
         int maxPrice = stockPriceOnDay[n - 1];
         int maxPos = n - 1;
         for (int i = n - 1; i >= purchaseDay; i--) {
-            if (stockPriceOnDay[i] > maxPrice) {
+            if (stockPriceOnDay[i] > maxPrice && i>minPos) {
                 maxPrice = stockPriceOnDay[i];
                 maxPos = i;
             }

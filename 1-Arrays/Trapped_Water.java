@@ -25,6 +25,28 @@ public class Trapped_Water {
         System.out.println("Total Water trapped in blocks is : " + trappedWater);
     }
 
+    // Another method to calculate Trapped Water
+     public static int trappedWater2(int arr[]) {
+        int l = 0;
+        int r = arr.length - 1;
+        int leftM = arr[0];
+        int rightM = arr[arr.length - 1];
+        int waterTrapped = 0;
+        while (l < r) {
+            if (leftM < rightM) {
+                l++;
+                leftM = Math.max(arr[l], leftM);
+                waterTrapped += leftM - arr[l];
+            } else {
+                r--;
+                rightM = Math.max(arr[r], rightM);
+                waterTrapped += rightM - arr[r];
+            }
+        }
+        return waterTrapped;
+    }
+    
+    
     public static void main(String[] args) {
         int height[] = { 4, 2, 0, 6, 3, 2, 5 };
 

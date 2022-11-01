@@ -9,18 +9,8 @@ public class Tiling_Problem {
         return solution;
     }
 
-    public static int pairOrSingle(int n) {
-        if (n == 1 || n == 2) {
-            return n;
-        }
-
-        return pairOrSingle(n - 1) + (n - 1) * pairOrSingle(n - 2);
-    }
-
     public static void main(String[] args) {
-        // System.out.println(tilingSolution(4));
-
-        System.out.println(pairOrSingle(10));
+        System.out.println(tilingSolution(4));
     }
 
 }

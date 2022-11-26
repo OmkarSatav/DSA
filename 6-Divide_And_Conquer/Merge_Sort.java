@@ -47,7 +47,7 @@ public class MergeSort{
         printArr(arr);
 
         // Merge Sort.
-        mergeSort(arr, 0, 6);
+        mergeSort(arr, 0, 7);
     
         printArr(arr);
 

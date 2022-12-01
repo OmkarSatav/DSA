@@ -21,6 +21,21 @@ public class String_Anagram {
         }
         return false;
     }
+    
+    // Leetcode - Valid Anagram
+     public boolean isAnagram2(String s, String t) {
+        char ch1[] = s.toCharArray();
+        char ch2[] = t.toCharArray();
+        
+        Arrays.sort(ch1);
+        Arrays.sort(ch2);
+        
+        if(Arrays.equals(ch1,ch2)){
+            return true;
+        }
+        
+        return false;
+    }
 
     public static void main(String[] args) {
         System.out.println(isAnagram("race", "care"));

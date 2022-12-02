@@ -32,6 +32,31 @@ public class Counting_Sort {
         }
     }
 
+    
+    // Sorts characters in a String
+    public static String countSort(String arr)
+    {
+        // code here
+        int temp[] = new int[26];
+        String result = "";
+        for(char ch: arr.toCharArray()){
+            temp[ch - 97]++;
+        }
+        
+        for(int i=0; i < temp.length ;i++){
+            if(temp[i] > 0){
+                int j = i;
+                while(temp[j] > 0){
+                    result += (char)(97+i);
+                    temp[j]--;
+                }
+            }
+        }
+        return result;
+        
+    }
+    
+    
     public static void main(String[] args) {
         int arr[] = { 1, 2, 4, 3, 8, 5, 6, 7 };
 

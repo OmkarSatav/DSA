@@ -1,4 +1,4 @@
-public class LinkedListBasics {
+public class Reverse_LinkedList {
     public static class Node {
         int data;
         Node next;

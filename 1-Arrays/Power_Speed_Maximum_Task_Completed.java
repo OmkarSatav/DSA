@@ -34,7 +34,7 @@ public class Power_Speed_Maximum_Task_Completed {
         int A[] = { 1, 2, 4, 9 };
         int B[] = { 1, 2, 4, 9 };
         int C[] = { 2, 1, 2, 3 };
-        System.out.println(maximumTask(A, B, C));
+        System.out.println(maximumTask(A, B, C));  // 3
     }
 }
 

@@ -12,7 +12,7 @@ public class Power_Speed_Maximum_Task_Completed {
             int getPower = 0;
           
             for (int i = 0; i < n; i++) {
-                if (A[i] <= power && executed[i] == 0 && B[i] <= speed) {
+                if ((A[i] <= power || B[i] <= speed) && executed[i] == 0 ) {
                     min = i;
                     getPower = C[i];
                 }

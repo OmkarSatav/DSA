@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class StackBasicIOArrayList {
+public class Stack_Basic_IO_Arraylist {
     static class Stack {
         static ArrayList<Integer> list = new ArrayList<Integer>();
 

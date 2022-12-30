@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class StackPushAtBottom {
+public class Stack_Push_At_Bottom {
     public static void pushAtBottom(Stack<Integer> stk, int data) {
         if (stk.isEmpty()) {
             stk.push(data);

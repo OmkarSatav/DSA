@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class StackFramework {
+public class Stack_Framework {
 
     // Stack Framework used to implement explicit Stack
     // method name - push, pop, peek
